@@ -1,7 +1,7 @@
 {
   "homepage": "https://nishwithx.github.io/about/",
   "name": "my-project",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
