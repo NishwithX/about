@@ -42,7 +42,7 @@ function Home() {
           </h1>
         </div>
         <h3 className="text-lg text-textbg max-w-md mx-auto text-center px-6 sm:px-8 leading-relaxed">
-          I'm <span className="text-white" style={{ textShadow: '0 0 20px #ffffff' }}>Nishwith</span>
+          I'm <span className="text-white" style={{ textShadow: '0 0 4px #ffffff' }}>Nishwith</span>
           <br />
           Student, Programmer, Linux user;
           <br />
