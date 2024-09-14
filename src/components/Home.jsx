@@ -12,11 +12,10 @@ function Home() {
     { word: "হ্যালো", name: "নিশ্বিথ", im: "আমি" },       // Bengali
     { word: "Hallo", name: "Nishwith", im: "Ich bin" },    // German
     { word: "こんにちは", name: "ニシュウィス", im: "私は" },  // Japanese
-    { word: "Bonjour", name: "Nishwith", im: "Je suis" },  // French
     { word: "Hola", name: "Nishwith", im: "Soy" },         // Spanish
     { word: "Привет", name: "Нишвит", im: "Я" },           // Russian
     { word: "你好", name: "尼施维斯", im: "我是" },          // Chinese
-    { word: "Hola", name: "Nishwith", im: "Soy" },         // Mexican (same as Spanish)
+    { word: "Bonjour", name: "Nishwith", im: "Je suis" },  // French
     { word: "안녕하세요", name: "니시위스", im: "저는" },     // Korean
   ];
 
