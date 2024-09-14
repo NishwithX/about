@@ -82,10 +82,6 @@ function Home() {
         </div>
       </div>
       
-      {/* Footer fixed to bottom */}
-      <footer className="text-footercolor text-center py-4">
-        © 2024 nishwith
-      </footer>
     </div>
   );
 }
