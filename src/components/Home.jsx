@@ -45,7 +45,7 @@ function Home() {
             <span className="text-white">{greetings[currentIndex].name}</span>
           </h1>
         </div>
-        <h3 className="text-xl text-textbg max-w-md mx-auto text-center px-6 sm:px-8 leading-relaxed">
+        <h3 className="text-1xl text-textbg max-w-md mx-auto text-center px-6 sm:px-8 leading-relaxed">
           Student, Programmer, Linux user;
           <br />
           I'm a self-taught software developer who's very passionate about Linux & I like to build cool stuff but haven't built anything yet ;)
