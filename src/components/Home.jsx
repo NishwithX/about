@@ -19,7 +19,6 @@ function Home() {
     "Hola",         // Mexican (same as Spanish)
     "안녕하세요",     // Korean (Annyeonghaseyo)
   ];
-  
 
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
 
@@ -34,53 +33,34 @@ function Home() {
   }, [words.length]);
 
   return (
-    <div className="flex flex-col min-h-screen bg-customBg">
-      <div className="flex-grow flex flex-col items-center justify-center space-y-6">
-        <div>
-          <h1 className="text-5xl text-textbg max-w-md mx-auto">
-            {words[currentWordIndex]}
-          </h1>
-        </div>
-        <h3 className="text-lg text-textbg max-w-md mx-auto text-center px-6 sm:px-8 leading-relaxed">
+    <div className="flex flex-col h-screen bg-customBg">
+      <div className="flex-grow flex flex-col items-center justify-center space-y-4 px-4">
+        <h1 className="text-4xl sm:text-5xl text-textbg">
+          {words[currentWordIndex]}
+        </h1>
+        <h3 className="text-sm sm:text-base text-textbg max-w-md text-center leading-tight">
           I'm <span className="text-white" style={{ textShadow: '0 0 20px #ffffff' }}>Nishwith</span>
           <br />
           Student, Programmer, Linux user;
           <br />
           I'm a self-taught software developer who's very passionate about Linux & I like to build cool stuff but haven't built anything yet ;)
         </h3>
-
-        <div className="text-center">
-          <nav className="mb-6">
-            <ul className="flex justify-center space-x-6">
-              <li>
+        <nav className="mt-4">
+          <ul className="flex justify-center space-x-4">
+            {["Blog", "Contact", "Projects"].map((item) => (
+              <li key={item}>
                 <Link
-                  to="/blog"
-                  className="bg-black text-white border border-white py-2 px-4 rounded hover:bg-gray-800"
+                  to={`/${item.toLowerCase()}`}
+                  className="bg-black text-white border border-white py-1 px-2 text-sm rounded hover:bg-gray-800"
                 >
-                  Blog
+                  {item}
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/contact"
-                  className="bg-black text-white border border-white py-2 px-4 rounded hover:bg-gray-800"
-                >
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/projects"
-                  className="bg-black text-white border border-white py-2 px-4 rounded hover:bg-gray-800"
-                >
-                  Projects
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+            ))}
+          </ul>
+        </nav>
       </div>
-      <footer className="text-footercolor text-center py-4 ">
+      <footer className="text-footercolor text-center py-2 text-sm">
         © 2024 nishwith
       </footer>
     </div>
