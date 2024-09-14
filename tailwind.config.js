@@ -9,7 +9,9 @@ export default {
       colors: {
         customBg: "#010502", // Add custom background color
         textbg:"#f7f4f4",
+        footercolor:"#909090",
       },
+      
     },
   },
   plugins: [],
