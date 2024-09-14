@@ -3,21 +3,21 @@ import { Link } from "react-router-dom";
 
 function Home() {
   const greetings = [
-    { word: "Hello", name: "Nishwith" },        // English
-    { word: "नमस्ते", name: "निश्विथ" },       // Hindi
-    { word: "ನಮಸ್ಕಾರ", name: "ನಿಶ್ವಿತ್" },     // Kannada
-    { word: "വണക്കം", name: "നിഷ്വിത്" },      // Malayalam
-    { word: "வணக்கம்", name: "நிஷ்வித்" },      // Tamil
-    { word: "హలో", name: "నిశ్విత్" },         // Telugu
-    { word: "হ্যালো", name: "নিশ্বিথ" },       // Bengali
-    { word: "Hallo", name: "Nishwith" },        // German
-    { word: "こんにちは", name: "ニシュウィス" },    // Japanese
-    { word: "Bonjour", name: "Nishwith" },      // French
-    { word: "Hola", name: "Nishwith" },         // Spanish
-    { word: "Привет", name: "Нишвит" },       // Russian
-    { word: "你好", name: "尼施维斯" },          // Chinese
-    { word: "Hola", name: "Nishwith" },         // Mexican (same as Spanish)
-    { word: "안녕하세요", name: "니시위스" },     // Korean
+    { word: "Hello", name: "Nishwith", im: "I'm" },        // English
+    { word: "नमस्ते", name: "निश्विथ", im: "मैं हूँ" },    // Hindi
+    { word: "ನಮಸ್ಕಾರ", name: "ನಿಶ್ವಿತ್", im: "ನಾನು" },    // Kannada
+    { word: "വണക്കം", name: "നിഷ്വിത്", im: "ഞാൻ" },      // Malayalam
+    { word: "வணக்கம்", name: "நிஷ்வித்", im: "நான்" },    // Tamil
+    { word: "హలో", name: "నిశ్విత్", im: "నేను" },        // Telugu
+    { word: "হ্যালো", name: "নিশ্বিথ", im: "আমি" },       // Bengali
+    { word: "Hallo", name: "Nishwith", im: "Ich bin" },    // German
+    { word: "こんにちは", name: "ニシュウィス", im: "私は" },  // Japanese
+    { word: "Bonjour", name: "Nishwith", im: "Je suis" },  // French
+    { word: "Hola", name: "Nishwith", im: "Soy" },         // Spanish
+    { word: "Привет", name: "Нишвит", im: "Я" },           // Russian
+    { word: "你好", name: "尼施维斯", im: "我是" },          // Chinese
+    { word: "Hola", name: "Nishwith", im: "Soy" },         // Mexican (same as Spanish)
+    { word: "안녕하세요", name: "니시위스", im: "저는" },     // Korean
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -40,8 +40,9 @@ function Home() {
           <h1 className="text-6xl text-textbg mb-4">
             {greetings[currentIndex].word}
           </h1>
-          <h1 className="text-3xl text-textbg">
-            I'm, <span className="text-white">{greetings[currentIndex].name}</span>
+          <h1 className="text-4xl text-textbg">
+            <span className="text-textbg">{greetings[currentIndex].im}</span>{' '}
+            <span className="text-white">{greetings[currentIndex].name}</span>
           </h1>
         </div>
         <h3 className="text-xl text-textbg max-w-md mx-auto text-center px-6 sm:px-8 leading-relaxed">
