@@ -33,7 +33,8 @@ function Home() {
   }, [words.length]);
 
   return (
-    <div className="flex flex-col min-h-screen justify-between bg-customBg">
+    <div className="flex flex-col h-screen overflow-hidden bg-customBg">
+      {/* Main content area that grows and centers content */}
       <div className="flex-grow flex flex-col items-center justify-center space-y-6">
         <div>
           <h1 className="text-5xl text-textbg max-w-md mx-auto">
@@ -79,7 +80,9 @@ function Home() {
           </nav>
         </div>
       </div>
-      <footer className="text-footercolor text-center py-4 ">
+      
+      {/* Footer fixed to bottom */}
+      <footer className="text-footercolor text-center py-4">
         © 2024 nishwith
       </footer>
     </div>
