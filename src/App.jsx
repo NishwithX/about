@@ -10,7 +10,7 @@ import Projects from './components/Projects';
 function App() {
   return (
     <Routes>
-      <Route path="/about" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/projects" element={<Projects />} />
